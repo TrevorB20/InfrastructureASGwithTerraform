@@ -81,7 +81,7 @@ resource "aws_security_group" "LUITSG" {
     self        = true
     from_port   = 22
     to_port     = 22
-    cidr_blocks = ["66.108.66.189/32"] #Get Your Own IP from your Local machine
+    cidr_blocks = ["0.0.0.0/32"] #Get Your Own IP from your Local machine
   }
   egress {
     from_port   = 0

@@ -15,7 +15,7 @@ provider "aws" {
 #Creating Launch Template
 resource "aws_launch_template" "Apache1" {
   name          = "Apache1"
-  image_id      = "ami-085ad6ae776d8f09c"
+  image_id      = "Add ami "
   instance_type = "t2.micro"
   user_data     = base64encode(file("Script_apache.sh"))
 
